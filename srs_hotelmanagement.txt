@@ -1,0 +1,31 @@
+Document:System Requirement Specification Document
+Title:Hotel management system.
+team :
+      Prasad Kavade 
+      Amol Shinde
+      Abhay Sawant
+      Rohan Chandgude
+
+
+scope:
+      this website will allow owener to maintain there hotel system.
+customer will be able to see the hotel booklet.
+also customer will be able to book rooms, table for them also rewiew
+there order or cancle there order on basic minimum charges. 
+system will be able to see live roos availability of hotel in hotel.
+
+requirement :
+ 
+function requirement:
+ 	any annoymous user will be able to see the hotels website.
+will be able to see varios rooms, tables, menue. if user want ot 
+book room or book table user needs to register on website.
+
+once customer booked there room they will able to book table or 
+able to order food from room itself 24*7.
+
+user have a choice to make payment like via online on via cash.
+
+user able to see the different ranges of room.
+
+ 

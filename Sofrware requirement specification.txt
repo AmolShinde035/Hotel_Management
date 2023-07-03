@@ -1,0 +1,186 @@
+Hotel management system
+Software requirement specification
+
+1 Introduction
+The hotel management system is a tool for booking the rooms of hotel through online by the
+Customer. It provides the proper management tools and easy access to the customer information.
+
+1.1 purpose
+This hotel management system software requirement specification (srs) main objective is to
+Provide a base for the foundation of the project. It gives a comprehensive view of how the system
+Is supposed to work and what is to be expected by the end users. Client’s expectation and
+Requirements are analyzed to produce specific unambiguous functional and non-functional
+Requirements, so they can be used by development team with clear understanding to build a system
+As per end user needs.
+This srs for hms can also be used for future as basis for detailed understanding on how project
+Was started. It provides a blueprint to upcoming new developers and maintenance teams to assist
+In maintaining and modifying this project as per required changeability.
+
+1.2 scope of the project
+The HMS project is intended for the reservations for room that can be made through online. It will
+Be able to automate the various operations of the hotel. Our hotel management system will have
+Three end users: customer, receptionist, and hotel manager. Hotel management system will
+Consists of booking management system, DBMS server, and report generator. Customers will
+be able to check for room’s availability, select the rooms, and pay for the room. Receptionist will
+Have access to update or modify booking details. Manager will able to view the financial report
+And able to update room information such as cost and category.
+The main goal of this introduced automated HMS software is to simplify every day process of
+Hotel. Day to day hotels are increasing and they need to automate to provide customer ease of
+Access. It will be able to take care of services to customer in a quick manner. This automation will
+Be able to replace the drawbacks of large customer information physical files which were difficult
+To handle. Secure transaction, quick retrieval of information, ease of use, quick recovery of errors,
+Fault tolerance are some of the benefits that development team will be working on to achieve end
+User satisfaction.
+
+1.3 definitions, acronyms and abbreviations
+SRS -software requirement specifications
+HMS -hotel management system
+DBMS -database management system
+Blueprint a design technical plan
+JDBC -java database connectivity
+Http/https -hyper text transfer protocol/secure
+EJB -enterprise java beans
+API -application interface
+Os -operating system
+JSP -java server pages
+RTM -requirement traceability matrix
+Fr -functional requirement
+Nfr -non functional requirement
+
+
+
+1.4 overview
+The remaining sections of this documentations describes the overall descriptions which includes
+Product perspective and functions, characteristics of users. It also consists of assumptions, and
+Constraints. Overall description is listed in section 2. Section 3 includes specific requirements
+Which consists of functional and non-functional requirements, external interface requirements,
+Software system attributes, performance requirements, capacity requirements, availability
+Requirements, safety requirements and requirement traceability matrix.
+
+2 overall description
+2.1 product perspective
+ 
+2.2 product functions
+Our product general functions are:
+1. customer registration
+2. check for availability of rooms
+3. display the rate
+4. confirmation of booking
+5. email notification
+6. payment
+7. set room details
+8. manage booking details
+9. generate report
+10. customer service
+
+2.3 user characteristics
+There are 3 user levels in our hotel management system:
+A. Hotel manager
+B. Receptionist
+C. Customers
+
+Hotel manager
+Manager have every access to the hotel system. Manager is solely responsible for managing hotel
+Resources and staffs. Manager can view any report such as financial report, customer information,
+Booking information, and room information, analyze them and take the decision accordingly.
+Manger is required to have experience on managing hotel previously, and have base knowledge of
+Database and application server.
+Receptionist
+Hotel receptionist sole purpose is to provide the quality customer service. She have least access
+Than manager. She can manage the booking details. She can search for availability of rooms, add
+The customer, confirm the booking, and update the booking details. Manager of hotel would
+Probably want the receptionist who have good communication skills and command over english
+Language. She should have basic it knowledge.
+Customer
+Customer are vital part of the system. Customer have access to view the vacant room information
+And price range. They should be able to confirm the booking and cancel it if necessary. Customers
+Have access to customer service desk portal to forward their inquiry. Customer should at least be
+Capable to use the web UI interface.
+
+2.4 constraints
+I. Memory: system will have only 10gb space of data server.
+Ii. Language requirement: software must be only in english.
+Iii. Budget constraint: due to limited budget, hms is intended to very simple and just for
+Basic functionalities. UI is going to be very simple.
+Iv. Implementation constraint: application should be based on java only.
+V. Reliability requirements: system should sync frequently to backup server in order to
+Avoid the data loss during failure, so it can be recovered.
+
+2.5 assumption and dependencies
+It is assumed that system developed will work perfectly that’s going to be developed under the
+Windows os, and apache server with mongo db database. If incase of any difficulties, srs
+Should be flexible enough to change accordingly.
+
+3 specific requirements
+
+3.1 functional requirements
+3.1.1 registration
+Fr1. The customer should be able to register with their details
+Fr2. The system should record following customer details into member database.
+ name
+ email
+ password
+ address
+ dob
+Fr3. The system shall send verification message to email
+
+3.1.2 logging in
+Fr4. The system should verify the customer email & password against the member database
+When logging in
+Fr5. After login, member should be directed to home screen
+
+3.1.3 reservation
+Fr6. The system should enable customer to check for availability of rooms
+Fr7. The system should display rate for all rooms
+Fr8. The system should allow customer to confirm or cancel the booking
+Fr9. The system should record booking details into database
+
+3.1.4 receptionist access
+Fr10. The system should allow receptionist to update, add or delete booking information
+Fr11.The System should provide customer desk portal access to receptionist for providing
+Response to customer inquiry
+
+3.1.5 manager access
+Fr12. The system should generate financial and customer report for manager
+Fr13. The system should enable manager full modification access to customer ,booking and
+Room information
+
+3.1.6 payment management system
+Fr14. The system should allow customer to pay bill via online using credit or debit card
+3.3 performance requirements
+Nf1. Data in database should be updated within 2 seconds.
+Nf2. Query results must return results within 5 seconds
+Nf3. Load time of ui should not take more than 2 seconds
+Nf4. Login validation should be done within 3 seconds
+Nf5. Response to customer inquiry must be done within 5 minutes.
+
+3.4 security requirements
+Nf6. All external communications between the data’s server and client must be encrypted
+Nf7. All data must be stored, protected or protectively marked.
+Nf8. Payment process should use http over secure protocol to secure the payment transactions
+
+3.5 safety requirements
+Nf9. Database should be backed up every hour.
+Nf10. Under failure, system should be able to come back at normal operation under an hour.
+
+3.6 capacity requirements
+Nf11. Not more than 10,000 members to be registered
+Nf12. System need to handle at least 20 transactions during peak hours.
+3.7 availability requirements
+Nf13. Report should be generated automatically every day for manager and anytime upon request.
+
+3.8 software system attributes
+1. correctness: this system should satisfy the normal regular hotel management operations
+Precisely to fulfill the end user objectives
+2. efficiency: enough resources to be implemented to achieve the particular task efficiently
+Without any hassle.
+3. flexibility: system should be flexible enough to provide space to add new features and to
+Handle them conveniently
+4. integrity: system should focus on securing the customer information and avoid data
+Losses as much as possible
+5. portability: the system should run in any micro-soft windows environment.
+6. usability: the system should provide user manual to every level of users.
+7. testability: the system should be able to be tested to confirm the performance and clients
+Specifications.
+8. maintainability: the system should be maintainable.
+

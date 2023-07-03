@@ -1,0 +1,33 @@
+Business Requiremnt Specification
+Author:
+Title:Hotel Management System
+Stakeholders:
+	    Customer,
+	    cheifs,
+	    waiter,
+	    Hotel owner/partners
+	
+
+Document generated with the help of  series of meetings held between Customers, Domain Experts, Business Analysts
+First Draft : 22/06/2023
+Revised Draft: 22/06/2023
+
+The Hotel Management System aims to provide an efficient and user-friendly solution for managing hotel operations. The primary objectives of the system are to streamline guest registration and management, optimize room allocation and availability, facilitate reservations and bookings, simplify check-in and check-out processes, automate billing and payment processing, track housekeeping and maintenance tasks, generate comprehensive reports and analytics, and ensure system performance, security, usability, and integration capabilities.
+
+To achieve these objectives, the system should allow for seamless registration and guest management, capturing and storing guest information during registration, managing guest profiles, and enabling updates as necessary. It should also include robust room management functionalities, such as tracking room inventory, availability, and allocation, and providing real-time updates on room status for cleaning and maintenance purposes.
+
+The reservation and booking management module should offer an online reservation system with real-time availability, allowing guests to make bookings conveniently. The system should handle booking confirmations, modifications, and cancellations efficiently, ensuring accurate and up-to-date information.
+
+Efficient check-in and check-out processes are essential, involving streamlined guest check-in procedures, room assignment, and key card issuance. Similarly, the system should facilitate smooth check-out processes, including seamless billing and payment processing.
+
+Billing and payment processing should integrate with payment gateways, generating itemized bills for guests and supporting various payment methods, such as cash and credit cards.
+
+Housekeeping and maintenance functionalities should include scheduling and assigning housekeeping tasks, tracking maintenance requests, and maintaining a comprehensive history of cleaning and maintenance activities.
+
+The system should generate various reports and analytics to provide insights into occupancy, revenue, guest preferences, and behavior, enabling informed decision-making for hotel management.
+
+
+
+
+
+
