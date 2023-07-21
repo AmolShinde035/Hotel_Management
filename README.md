@@ -1,4 +1,4 @@
-# Hotel_Management
+# Hotel_Room_Booking
 ## This repo contain project related source code, srs, brs and related info
 <hr/>
 <ol>
